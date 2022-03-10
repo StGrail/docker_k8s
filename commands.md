@@ -1,4 +1,11 @@
 ### tags
-docker_id/repoORproject_name:version . (context)<br/>
-docker build -t ga/redis:latest . <br/>
-docker run ga/redis
+<code>docker_id/repoORproject_name:version .</code>(context)<br/>
+<code>docker build -t ga/redis:latest .</code><br/>
+<code>docker run ga/redis</code>
+
+### запуск с докерфайлом для дев окружения
+
+<code>docker build -f Dockerfile.dev</code>
+
+[//]: # (флаг -f == file, указываем, какой файл используем для сборки докера)
+
