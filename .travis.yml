@@ -4,7 +4,8 @@ services:
   - docker
 
 before_install:
-  - docker build -t frontent/docker_k8s -f frontend/Dockerfile.dev .
+  - cd frontend
+  - docker build -t frontent/docker_k8s -f Dockerfile .
 
 script:
   - docker run -e CI=true frontent/docker_k8s npm run test -- --coverage
