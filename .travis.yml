@@ -8,4 +8,5 @@ before_install:
   - docker build -t frontent/docker_k8s -f Dockerfile .
 
 script:
+  - cd frontend
   - docker run -e CI=true frontent/docker_k8s npm run test -- --coverage
