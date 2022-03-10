@@ -5,7 +5,7 @@ services:
 
 before_install:
   - cd frontend
-  - docker build -t frontent/docker_k8s -f Dockerfile .
+  - docker build -t frontent/docker_k8s -f Dockerfile.dev .
 
 script:
   - cd frontend
